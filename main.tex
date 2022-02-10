@@ -1,0 +1,98 @@
+\documentclass[12pt, a4paper, twoside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm, tikz}
+\usepackage{amsmath, amssymb}
+\usepackage{xcolor}
+\usepackage[margin=3cm]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tcolorbox}
+\usepackage{diagbox}
+
+\usepackage{hyperref}
+\hypersetup{pdfborder={0 0 0}}
+
+\renewcommand{\arraystretch}{2}
+
+\usetikzlibrary{arrows,positioning,shapes,fit,calc}
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+\usepackage{pifont}
+\usepackage{pgfplots}
+\usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\usetikzlibrary{patterns}
+\usepackage{tikzpagenodes} 
+\usepackage{lipsum} 
+\colorlet{circle edge}{blue!150}
+\colorlet{circle area}{blue!20}
+\tikzset{filled/.style={fill=circle area, draw=circle edge, thick},
+    outline/.style={draw=circle edge, thick}}
+\usepackage{xcolor}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark}
+\newtheorem*{definition}{Definition}
+\newtheorem*{example}{Example}
+\newtheorem*{exercise}{Exercise}
+\newtheorem*{conjecture}{Conjecture}
+
+
+\parindent=0mm
+\parskip=1.9mm
+\linespread{1.1}
+\hyphenpenalty=10000
+
+\renewcommand\qedsymbol{$\blacksquare$}
+\renewcommand{\restriction}{\mathord{\upharpoonright}}
+
+
+\binoppenalty=\maxdimen
+\relpenalty=\maxdimen
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\codom}{codom}
+\DeclareMathOperator{\range}{range}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\Graph}{Graph}
+
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\begin{document}
+\begin{titlepage}
+\textbf{\Large Daoud Siniora}
+\begin{center}
+\vspace{3.2cm}
+\textbf{\Huge Linear Algebra}
+
+\textbf{\large Lecture Notes}
+\end{center}       
+\vspace{3.2cm}
+{\large
+	\begin{center}\[
+	\begin{bmatrix}
+		3 & 1 & 4 & 1 & 5 & 9 & 2 & 6 & 5 & 3 \\
+		2 & 7 & 1 & 8 & 2 & 8 & 1 & 8 & 2 & 8 \\
+		1 & 6 & 1 & 8 & 0 & 3 & 3 & 9 & 8 & 8 \\
+	\end{bmatrix}
+\]
+\end{center}
+}
+\vfill
+
+\begin{center}
+Mathematics and Actuarial Science Department\\
+The American University in Cairo
+\end{center} 
+\end{titlepage}~
+\thispagestyle{empty}
+
+\tableofcontents
+
+\renewcommand{\arraystretch}{1.2}
+\end{document}
+
